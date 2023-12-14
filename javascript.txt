@@ -1,0 +1,51 @@
+How are the JavaScript window and JavaScript document different from one another?
+
+
+A document is an object inside the window object and we use a document object for manipulation inside the document.
+
+The first thing that gets loaded into the browser is the window and the properties related to that window are stored in the window object. Properties related to window objects are length, innerWidth, innerHeight, caches, etc.
+
+There was a document object too so what about it then?
+
+So after the window gets loaded then there’s a document (HTML, PHP, or another document) loaded inside that window, and the properties related to that document is stored in the document object. Properties related to document objects are title, URL, cookie, etc.
+
+Document Object:
+
+The document object represents a web page that is loaded in the browser. By accessing the document object, we can access the element in the HTML page. With the help of document objects, we can add dynamic content to our web page. The document object can be accessed with a window.document or just document.
+
+Syntax:
+
+document.property_name;
+
+
+⦁	The properties of document objects that are commonly used are listed in the below table:
+
+
+Properties of document:
+
+⦁	activeElement: It returns the currently active elements in the document.
+⦁	body: It returns the contents of the body element.
+⦁	anchors: It returns all <a> elements that have a name attribute.
+⦁	baseURI: It returns a string value that represents the base URI of the document.
+⦁	cookie: It returns the cookie of the current document.
+⦁	charSet: It returns a string, representing the document’s character encoding.
+⦁	defaultView: It returns the current Window Object.
+
+
+Window Object;
+
+   The window object is the topmost object of the DOM hierarchy. It represents a browser window or frame that displays the contents of the webpage. Whenever a window appears on the screen to display the contents of the document, the window object is created. 
+
+i.	Syntax:
+
+window.property_name;
+
+Properties of the window:
+
+i.	Closed: It holds a Boolean value that represents whether the window is closed or not.
+ii.	console: It returns a reference to the console object which provides access to the browser’s debugging console.
+iii.	defaultStatus: It is used to define the default message that will be displayed in the status bar when no activity is carried on by the browser.
+iv.	controllers: It returns the XUL controller objects for the current Chrome window.
+v.	customElements: It returns a reference to the CustomElementRegistry object, which can be used to register new custom elements and also get information about already registered custom elements.
+vi.	crypto: It returns the browser crypto object.
+
